@@ -1,0 +1,65 @@
+#kk {
+  background-color: #98b;
+}
+#kk {
+  width: 100px;
+  height: 150px;
+}
+.button {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+.btn_border {
+  border: 1px solid green;
+}
+.button1 {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border: 1px solid green;
+  border: 1px solid black;
+}
+.button2 {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border: 1px solid green;
+  border: 1px solid black;
+}
+.button3 {
+  width: 500px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid green;
+  border: 1px solid black;
+}
+.button4 {
+  width: 300px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid green;
+  border: 1px solid black;
+}
+.div1 {
+  background-color: blue;
+  font-size: 14px;
+  width: 400px;
+  height: 300px;
+}
+.div1 .div2 {
+  background-color: yellow;
+  font-size: 14px;
+  width: 200px;
+  height: 100px;
+}
+.div1 .div2 .button5 {
+  background-color: #98b;
+  color: red;
+  width: 100px;
+  height: 50px;
+}
+.div1 > .div3 {
+  font-size: 40px;
+  color: red;
+}

@@ -1,0 +1,77 @@
+//变量
+@base: #98b;
+#kk{
+	background-color: @base;
+}
+
+@width: 100px;
+@height: @width + 50px;
+#kk{
+	width: @width;
+	height: @height;
+}
+//类名混入
+.button{
+	width: 200px;
+	height: 200px;
+	background-color:pink;
+}
+.btn_border{
+	border: 1px solid green;
+}
+
+.button1 {
+	.button();
+	.btn_border();
+}
+.button2 {
+	.button();
+	.btn_border();
+}
+
+// 函数混入 减少css冗余
+.button(@len){
+	width: @len;
+	height: 200px;
+	background-color:green;
+}
+
+.btn_border(){
+	border: 1px solid black;
+}
+
+.button3{
+	.button(500px);
+	.btn_border();
+}
+
+.button4{
+	.button(300px);
+	.btn_border();
+}
+
+//嵌套
+.div1{
+	background-color: blue;
+	font-size: 14px;
+	width: 400px;
+	height: 300px;
+	.div2{
+		background-color: yellow;
+		font-size: 14px;
+		width: 200px;
+		height: 100px;
+		 .button5 {
+			 background-color: #98b;
+			color:red;
+			width:100px;
+			height: 50px;
+		}
+	}
+	> .div3 {
+		font-size: 40px;
+		color: red;
+	}
+}
+
+

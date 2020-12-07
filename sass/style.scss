@@ -1,0 +1,58 @@
+@import "base";//不需要写'_'和'.scss'
+
+/*多行注释
+会被包含在没有压缩之后的CSS 文件中*/
+//单行注释不会出现在CSS文件中
+/*！强制输出注释内容*/
+
+//变量 
+$font-size: 14px;
+$bgc: #56b;
+
+body{
+	//属性
+	font: {
+		size:22px;
+		family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		weight:700 ;
+	}
+}
+//层叠
+div{
+	background-color:$bgc;
+	font-size: $font-size;
+	p{
+		font-size: 20px;
+		color: red;
+	}
+	button{
+		background-color: green;
+		color: yellow;
+		width:200px;
+		height: 100px;
+	}
+	a{
+		color:pink;
+	}
+
+}
+
+//混入
+@mixin alert($width, $height){
+	color: pink;
+	width: $width;
+	height: $height;
+	font-size: 40px;
+	
+}
+.alert-warnning{
+	@include alert(200px,300px);
+}
+//继承
+.ll{
+	color: blue;
+}
+.jj{
+	@extend .ll;
+	background-color: #fff;
+}
